@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -18,6 +17,14 @@ a:hover {
     cursor: pointer;
 }
 
+.text-button {
+    background: none;
+    border-radius: 4rem;
+    padding: 0;
+    margin: 0;
+    width: 124px;
+    height: 50px;
+}
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -44,6 +51,12 @@ a:hover {
     padding-right: 0;
 }
 
+.logo-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .bloc-lg {
     padding: 100px 50px;
 }
@@ -80,7 +93,7 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
+::before {
     content: "";
     background-size: 2px 2px;
     position: absolute;
@@ -90,6 +103,16 @@ a:hover {
     right: 0;
 }
 
+.bloc-bg-texture {
+    height: 34rem;
+}
+
+/** modif navbar**/
+
+.keywords {
+    color: #cccccc;
+    font-size: 1px;
+}
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
@@ -435,11 +458,6 @@ nav .caret {
     float: right;
 }
 
-.mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -683,6 +701,7 @@ p {
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    padding-top: 2rem;
 }
 
 .h1 {
@@ -690,6 +709,14 @@ p {
     font-family: "Open Sans";
 }
 
+.text-center-agence {
+    display: flex;
+    text-align: center;
+}
+
+h3 .text-center {
+    margin: 3rem 0 2rem 0;
+}
 .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
@@ -819,6 +846,7 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
+
 }
 
 .bg-presentation {
