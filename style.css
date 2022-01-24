@@ -291,7 +291,9 @@ a:hover {
     margin-bottom: 0;
     z-index: 1;
 }
-
+p {
+    font-size: 12px;
+}
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
